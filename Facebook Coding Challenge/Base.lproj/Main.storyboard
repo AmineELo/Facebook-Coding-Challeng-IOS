@@ -35,5 +35,41 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Albums Grid-->
+        <scene sceneID="FEy-he-49d">
+            <objects>
+                <viewController id="8t0-lf-6Si" customClass="AlbumsGridViewController" customModule="Facebook_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xhC-rt-SV6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jp7-vp-tyj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Albums Grid" id="nyG-0e-tUn">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="mGW-fo-XgL"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4C-Kg-lNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135.1999999999998" y="94.902548725637189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E5p-7E-b2V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LXL-cU-UDQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HFW-hW-mBJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8t0-lf-6Si" kind="relationship" relationship="rootViewController" id="f7r-Kt-HkZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJx-2U-nr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="94.902548725637189"/>
+        </scene>
     </scenes>
 </document>
