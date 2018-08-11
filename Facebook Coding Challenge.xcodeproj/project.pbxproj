@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E4117512114CB3B00D5C0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4117502114CB3B00D5C0A9 /* AppDelegate.swift */; };
-		2E4117532114CB3B00D5C0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4117522114CB3B00D5C0A9 /* ViewController.swift */; };
+		2E4117532114CB3B00D5C0A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */; };
 		2E4117562114CB3B00D5C0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4117542114CB3B00D5C0A9 /* Main.storyboard */; };
 		2E4117582114CB3B00D5C0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4117572114CB3B00D5C0A9 /* Assets.xcassets */; };
 		2E41175B2114CB3B00D5C0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4117592114CB3B00D5C0A9 /* LaunchScreen.storyboard */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		2E41174D2114CB3B00D5C0A9 /* Facebook Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4117502114CB3B00D5C0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E4117522114CB3B00D5C0A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2E4117552114CB3B00D5C0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E4117572114CB3B00D5C0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E41175A2114CB3B00D5C0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				2E4117502114CB3B00D5C0A9 /* AppDelegate.swift */,
-				2E4117522114CB3B00D5C0A9 /* ViewController.swift */,
+				2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */,
 				2E4117542114CB3B00D5C0A9 /* Main.storyboard */,
 				2E4117572114CB3B00D5C0A9 /* Assets.xcassets */,
 				2E4117592114CB3B00D5C0A9 /* LaunchScreen.storyboard */,
@@ -228,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4117532114CB3B00D5C0A9 /* ViewController.swift in Sources */,
+				2E4117532114CB3B00D5C0A9 /* LoginViewController.swift in Sources */,
 				2E4117512114CB3B00D5C0A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +377,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F252C4AR2T;
 				INFOPLIST_FILE = "Facebook Coding Challenge/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amineelouattar.Facebook-Coding-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -393,7 +396,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F252C4AR2T;
 				INFOPLIST_FILE = "Facebook Coding Challenge/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amineelouattar.Facebook-Coding-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
