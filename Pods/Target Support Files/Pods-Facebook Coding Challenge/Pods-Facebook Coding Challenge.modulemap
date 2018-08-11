@@ -1,0 +1,6 @@
+framework module Pods_Facebook_Coding_Challenge {
+  umbrella header "Pods-Facebook Coding Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
