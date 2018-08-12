@@ -74,6 +74,15 @@ class PictureViewController: UIViewController {
         
         pictures.append(picture)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToFullScreen" {
+            if let index = sender as? IndexPath,
+                let destinationVC = segue.destination as? FullScreenViewController{
+                destinationVC.pictureUrl = pictures[index.row].pictureUrl
+            }
+        }
+    }
 }
 
 extension PictureViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -89,5 +98,9 @@ extension PictureViewController: UICollectionViewDelegate, UICollectionViewDataS
             picture.af_setImage(withURL: url!)
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToFullScreen", sender: indexPath)
     }
 }
