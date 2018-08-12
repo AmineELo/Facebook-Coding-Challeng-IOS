@@ -49,7 +49,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="64l-8R-aFL" userLabel="Album Collection View">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Y6N-TF-bLv">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Y6N-TF-bLv">
                                     <size key="itemSize" width="273" height="177"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -63,15 +63,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="273" height="177"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKS-Wk-cqy">
-                                                    <rect key="frame" x="115" y="136" width="0.0" height="0.0"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SiM-mm-jCz">
+                                                    <rect key="frame" x="-4" y="0.0" width="280" height="209"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-Vv-EP2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="273" height="145"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKS-Wk-cqy">
+                                                            <rect key="frame" x="0.0" y="153" width="273" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="SiM-mm-jCz" firstAttribute="leading" secondItem="i9D-2O-Nlo" secondAttribute="leading" id="Vhz-jM-u8Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="SiM-mm-jCz" secondAttribute="trailing" id="hkh-o8-4s7"/>
+                                            <constraint firstItem="SiM-mm-jCz" firstAttribute="top" secondItem="i9D-2O-Nlo" secondAttribute="top" id="j5i-fI-l6q"/>
+                                            <constraint firstAttribute="bottom" secondItem="SiM-mm-jCz" secondAttribute="bottom" id="mRM-g8-OF3"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
