@@ -12,15 +12,29 @@ import FacebookLogin
 
 class AlbumsGridViewController: UIViewController {
 
+    @IBOutlet weak var albumCollectionView: UICollectionView!
+    
+    var albums = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        configureAlbumGrid()
         getUserAlbums()
     }
 
     @IBAction func logoutPressed(_ sender: Any) {
         logout()
+    }
+    
+    func configureAlbumGrid(){
+        albumCollectionView.delegate = self
+        albumCollectionView.dataSource = self
+        // make the cell width equal to half the screen (-20 for the spacing)
+        let width = (view.frame.size.width - 20) / 2
+        let layout = albumCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: width, height: width)
     }
     
     func logout(){
@@ -79,5 +93,15 @@ class AlbumsGridViewController: UIViewController {
                 }
             }
         }
+    }
+}
+
+extension AlbumsGridViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
     }
 }
