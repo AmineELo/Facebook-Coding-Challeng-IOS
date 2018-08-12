@@ -24,6 +24,16 @@ class PictureViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         print(albumId)
+        configureAlbumGrid()
+    }
+    
+    func configureAlbumGrid(){
+        pictureCollectionView.delegate = self
+        pictureCollectionView.dataSource = self
+        // make the cell width equal to half the screen (-10 for the spacing)
+        let width = (view.frame.size.width - 10) / 2
+        let layout = pictureCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: width, height: width)
     }
 }
 
