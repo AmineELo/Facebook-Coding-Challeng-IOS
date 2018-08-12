@@ -82,6 +82,12 @@ extension PictureViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        return UICollectionViewCell()
+        let cell = pictureCollectionView.dequeueReusableCell(withReuseIdentifier: "pictureCollectionCell", for: indexPath)
+        
+        if let picture = cell.viewWithTag(10) as? UIImageView{
+            let url = URL(string: pictures[indexPath.row].pictureUrl)
+            picture.af_setImage(withURL: url!)
+        }
+        return cell
     }
 }
