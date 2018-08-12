@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if let accessToken = AccessToken.current {
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,9 +36,20 @@ class ViewController: UIViewController {
             case .cancelled:
                 print("User cancelled login.")
             case .success(_, _, _):
-                print("Logged in!")
+                print("Success")
+                self.showAlbumGridVC()
             }
         }
+    }
+    
+    //This method is a workaround for the active bug mentionned here https://github.com/facebook/facebook-sdk-swift/issues/201
+    //When the LoginManager callback returns, then the presentedViewController on the current LoginViewController is still
+    //SFAuthenticationViewController.
+    //This forces me to add a delay before I can continue working with the view stack.
+    func showAlbumGridVC(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            self.performSegue(withIdentifier: "goToAlbumGrid", sender: self)
+        })
     }
     
     
