@@ -82,6 +82,7 @@ class PictureViewController: UIViewController {
             if let index = sender as? IndexPath,
                 let destinationVC = segue.destination as? FullScreenViewController{
                 destinationVC.pictureId = pictures[index.row].pictureId
+                destinationVC.pictureUrl = pictures[index.row].pictureUrl
             }
         }
     }
