@@ -18,7 +18,7 @@ These are technologies & 3rd-partie libraries used in this app
 > For my case i'm using my facebook developper account to test, so to make it work for you, you should apply the coming instruction step by step.
 
 1. Clone the repository.
-```git clone https://github.com/AmineELo/Facebook-coding-challenge.git```
+```git clone https://github.com/AmineELo/Facebook-Coding-Challeng-IOS.git```
 
 2. open the project with android studio
 
