@@ -18,16 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_header" translatesAutoresizingMaskIntoConstraints="NO" id="E6w-pV-F9N">
+                                <rect key="frame" x="0.0" y="20" width="375" height="314"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15I-1V-rIm">
-                                <rect key="frame" x="118" y="274" width="138" height="30"/>
+                                <rect key="frame" x="108" y="436" width="158" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login with facebook"/>
+                                <color key="backgroundColor" red="0.17647058823529413" green="0.29803921568627451" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Login with facebook">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loginWithFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQi-pY-nun"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E6w-pV-F9N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Bw-SI-UpT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E6w-pV-F9N" secondAttribute="trailing" id="8zc-T2-kcR"/>
+                            <constraint firstItem="E6w-pV-F9N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SdR-hK-Ii2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -36,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="134"/>
+            <point key="canvasLocation" x="284" y="133.5832083958021"/>
         </scene>
         <!--Albums Grid-->
         <scene sceneID="FEy-he-49d">
@@ -219,4 +231,7 @@
             <point key="canvasLocation" x="1193" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook_header" width="548" height="314"/>
+    </resources>
 </document>
