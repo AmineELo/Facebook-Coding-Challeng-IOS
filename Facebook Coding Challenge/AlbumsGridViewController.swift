@@ -16,6 +16,7 @@ class AlbumsGridViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        getUserAlbums()
     }
 
     @IBAction func logoutPressed(_ sender: Any) {
@@ -45,5 +46,38 @@ class AlbumsGridViewController: UIViewController {
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
             window.rootViewController = vc
         })
+    }
+    
+    func getUserAlbums(){
+        let connection = GraphRequestConnection()
+        connection.add(GraphRequest(graphPath: "/me/albums?fields=cover_photo,picture,name,count")) { httpResponse, result in
+            switch result {
+            case .success(let response):
+                //print("Graph Request Succeeded: \(response)")
+                self.extractAlbums(response: response)
+                
+            case .failed(let error):
+                print("Graph Request Failed: \(error)")
+            }
+        }
+        connection.start()
+    }
+    
+    func extractAlbums(response: GraphRequest.Response){
+        if let responseDictionary = response.dictionaryValue{
+            if let data: NSArray = responseDictionary["data"] as? NSArray{
+                for  i in 0..<data.count {
+                    let valueDict : NSDictionary = data[i] as! NSDictionary
+                    let count = valueDict.object(forKey: "count") as! NSNumber
+                    let id = valueDict.object(forKey: "name") as! String
+                    let pictureUrl = ((valueDict.object(forKey: "picture") as! NSDictionary)
+                        .object(forKey: "data") as! NSDictionary)
+                        .object(forKey: "url") as! String
+                    print(count)
+                    print(id)
+                    print(pictureUrl)
+                }
+            }
+        }
     }
 }
