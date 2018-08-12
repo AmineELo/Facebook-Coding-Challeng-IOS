@@ -75,25 +75,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="273" height="177"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-Vv-EP2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="273" height="140"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="AMine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKS-Wk-cqy">
-                                                    <rect key="frame" x="8" y="148.5" width="257" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eAJ-Eq-4GT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="209"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ddf-Vv-EP2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="273" height="148.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="AMine" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKS-Wk-cqy">
+                                                            <rect key="frame" x="112.5" y="156.5" width="48.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="ddf-Vv-EP2" firstAttribute="top" secondItem="i9D-2O-Nlo" secondAttribute="top" id="3Pa-If-H8e"/>
-                                            <constraint firstItem="DKS-Wk-cqy" firstAttribute="leading" secondItem="i9D-2O-Nlo" secondAttribute="leading" constant="8" id="IeF-3v-H3s"/>
-                                            <constraint firstItem="DKS-Wk-cqy" firstAttribute="top" secondItem="ddf-Vv-EP2" secondAttribute="bottom" constant="8" id="ak3-IU-uce"/>
-                                            <constraint firstAttribute="trailing" secondItem="DKS-Wk-cqy" secondAttribute="trailing" constant="8" id="eCF-kL-pOU"/>
-                                            <constraint firstAttribute="trailing" secondItem="ddf-Vv-EP2" secondAttribute="trailing" id="egC-wE-oZ5"/>
-                                            <constraint firstItem="ddf-Vv-EP2" firstAttribute="leading" secondItem="i9D-2O-Nlo" secondAttribute="leading" id="g5Q-G8-EBW"/>
-                                            <constraint firstAttribute="bottom" secondItem="DKS-Wk-cqy" secondAttribute="bottom" constant="8" id="gyB-vo-YlR"/>
+                                            <constraint firstAttribute="bottom" secondItem="eAJ-Eq-4GT" secondAttribute="bottom" id="0g5-BF-Pwq"/>
+                                            <constraint firstAttribute="trailing" secondItem="eAJ-Eq-4GT" secondAttribute="trailing" id="Ifa-Cz-sgZ"/>
+                                            <constraint firstItem="eAJ-Eq-4GT" firstAttribute="leading" secondItem="i9D-2O-Nlo" secondAttribute="leading" id="bpZ-zr-vPA"/>
+                                            <constraint firstItem="eAJ-Eq-4GT" firstAttribute="top" secondItem="i9D-2O-Nlo" secondAttribute="top" id="kEO-xd-lG5"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
