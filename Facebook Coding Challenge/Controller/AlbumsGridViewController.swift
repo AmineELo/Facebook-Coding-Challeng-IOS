@@ -45,6 +45,10 @@ class AlbumsGridViewController: UIViewController {
         changeRootViewControllerToLogin()
     }
     
+    func sortAlbumByName(){
+        albums = albums.sorted(by: {$0.albumName < $1.albumName})
+    }
+    
     func changeRootViewControllerToLogin(){
         guard let window = UIApplication.shared.keyWindow else {
             return
@@ -85,6 +89,7 @@ class AlbumsGridViewController: UIViewController {
                 for  i in 0..<data.count {
                     appendAlbum(array: data, index: i)
                 }
+                sortAlbumByName()
                 albumCollectionView.reloadData()
             }
         }
