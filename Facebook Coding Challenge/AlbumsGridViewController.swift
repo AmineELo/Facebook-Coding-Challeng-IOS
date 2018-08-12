@@ -14,7 +14,7 @@ class AlbumsGridViewController: UIViewController {
 
     @IBOutlet weak var albumCollectionView: UICollectionView!
     
-    var albums = [String]()
+    var albums = [Album]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,10 +98,12 @@ class AlbumsGridViewController: UIViewController {
 
 extension AlbumsGridViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return albums.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = albumCollectionView.dequeueReusableCell(withReuseIdentifier: "albumCollectionCell", for: indexPath)
+        
+        return cell
     }
 }
