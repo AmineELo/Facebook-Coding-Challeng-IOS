@@ -8,21 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		2E4117512114CB3B00D5C0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4117502114CB3B00D5C0A9 /* AppDelegate.swift */; };
-		2E4117532114CB3B00D5C0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4117522114CB3B00D5C0A9 /* ViewController.swift */; };
+		2E4117532114CB3B00D5C0A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */; };
 		2E4117562114CB3B00D5C0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4117542114CB3B00D5C0A9 /* Main.storyboard */; };
 		2E4117582114CB3B00D5C0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4117572114CB3B00D5C0A9 /* Assets.xcassets */; };
 		2E41175B2114CB3B00D5C0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4117592114CB3B00D5C0A9 /* LaunchScreen.storyboard */; };
+		2E66DB85212024BC006889E5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66DB84212024BC006889E5 /* Album.swift */; };
+		2E9AD10E211FAA960038EB1E /* AlbumsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */; };
+		2EF70873212037E5008434A8 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF70872212037E5008434A8 /* PictureViewController.swift */; };
+		2EF7087521203E3A008434A8 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7087421203E3A008434A8 /* Picture.swift */; };
+		2EF7087721204409008434A8 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7087621204409008434A8 /* FullScreenViewController.swift */; };
 		348042157ECC93BFB79E7614 /* Pods_Facebook_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67950CBDFF653B3651227C8 /* Pods_Facebook_Coding_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E41174D2114CB3B00D5C0A9 /* Facebook Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Facebook Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4117502114CB3B00D5C0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E4117522114CB3B00D5C0A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2E4117552114CB3B00D5C0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E4117572114CB3B00D5C0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E41175A2114CB3B00D5C0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E41175C2114CB3B00D5C0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E66DB84212024BC006889E5 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsGridViewController.swift; sourceTree = "<group>"; };
+		2EF70872212037E5008434A8 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		2EF7087421203E3A008434A8 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		2EF7087621204409008434A8 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		3B11CE582AF9E67DE8F4167B /* Pods-Facebook Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Coding Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Coding Challenge/Pods-Facebook Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		60AB6A3EF1BFFD254E1B1F23 /* Pods-Facebook Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Coding Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Coding Challenge/Pods-Facebook Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A67950CBDFF653B3651227C8 /* Pods_Facebook_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,13 +80,42 @@
 			isa = PBXGroup;
 			children = (
 				2E4117502114CB3B00D5C0A9 /* AppDelegate.swift */,
-				2E4117522114CB3B00D5C0A9 /* ViewController.swift */,
-				2E4117542114CB3B00D5C0A9 /* Main.storyboard */,
+				2EF7087021203778008434A8 /* Model */,
+				2EF7086F21203763008434A8 /* Controller */,
+				2EF708712120378A008434A8 /* View */,
 				2E4117572114CB3B00D5C0A9 /* Assets.xcassets */,
-				2E4117592114CB3B00D5C0A9 /* LaunchScreen.storyboard */,
 				2E41175C2114CB3B00D5C0A9 /* Info.plist */,
 			);
 			path = "Facebook Coding Challenge";
+			sourceTree = "<group>";
+		};
+		2EF7086F21203763008434A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */,
+				2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */,
+				2EF70872212037E5008434A8 /* PictureViewController.swift */,
+				2EF7087621204409008434A8 /* FullScreenViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2EF7087021203778008434A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E66DB84212024BC006889E5 /* Album.swift */,
+				2EF7087421203E3A008434A8 /* Picture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EF708712120378A008434A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E4117542114CB3B00D5C0A9 /* Main.storyboard */,
+				2E4117592114CB3B00D5C0A9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6058F01E7D056D5A82A45060 /* Pods */ = {
@@ -165,6 +204,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Facebook Coding Challenge/Pods-Facebook Coding Challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -175,6 +216,8 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -228,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4117532114CB3B00D5C0A9 /* ViewController.swift in Sources */,
+				2EF7087521203E3A008434A8 /* Picture.swift in Sources */,
+				2E4117532114CB3B00D5C0A9 /* LoginViewController.swift in Sources */,
 				2E4117512114CB3B00D5C0A9 /* AppDelegate.swift in Sources */,
+				2E9AD10E211FAA960038EB1E /* AlbumsGridViewController.swift in Sources */,
+				2E66DB85212024BC006889E5 /* Album.swift in Sources */,
+				2EF7087721204409008434A8 /* FullScreenViewController.swift in Sources */,
+				2EF70873212037E5008434A8 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +425,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F252C4AR2T;
 				INFOPLIST_FILE = "Facebook Coding Challenge/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amineelouattar.Facebook-Coding-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -393,7 +444,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F252C4AR2T;
 				INFOPLIST_FILE = "Facebook Coding Challenge/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amineelouattar.Facebook-Coding-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

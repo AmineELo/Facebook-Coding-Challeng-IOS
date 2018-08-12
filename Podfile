@@ -8,5 +8,8 @@ target 'Facebook Coding Challenge' do
     pod 'FacebookCore'
     pod 'FacebookLogin'
     pod 'FacebookShare'
+    pod 'Alamofire', '~> 4.7'
+    pod 'AlamofireImage', '~> 3.3'
+
 
 end
