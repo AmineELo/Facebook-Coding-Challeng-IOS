@@ -74,15 +74,39 @@
 			isa = PBXGroup;
 			children = (
 				2E4117502114CB3B00D5C0A9 /* AppDelegate.swift */,
-				2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */,
-				2E4117542114CB3B00D5C0A9 /* Main.storyboard */,
+				2EF7087021203778008434A8 /* Model */,
+				2EF7086F21203763008434A8 /* Controller */,
+				2EF708712120378A008434A8 /* View */,
 				2E4117572114CB3B00D5C0A9 /* Assets.xcassets */,
-				2E4117592114CB3B00D5C0A9 /* LaunchScreen.storyboard */,
 				2E41175C2114CB3B00D5C0A9 /* Info.plist */,
-				2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */,
-				2E66DB84212024BC006889E5 /* Album.swift */,
 			);
 			path = "Facebook Coding Challenge";
+			sourceTree = "<group>";
+		};
+		2EF7086F21203763008434A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */,
+				2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2EF7087021203778008434A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E66DB84212024BC006889E5 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EF708712120378A008434A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E4117542114CB3B00D5C0A9 /* Main.storyboard */,
+				2E4117592114CB3B00D5C0A9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6058F01E7D056D5A82A45060 /* Pods */ = {
@@ -389,7 +413,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F252C4AR2T;
 				INFOPLIST_FILE = "Facebook Coding Challenge/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amineelouattar.Facebook-Coding-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -405,7 +432,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F252C4AR2T;
 				INFOPLIST_FILE = "Facebook Coding Challenge/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.amineelouattar.Facebook-Coding-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
