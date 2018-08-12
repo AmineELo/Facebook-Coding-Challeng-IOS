@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKCoreKit
+import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         // Init the Facebook SDK
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions:launchOptions)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        //Check if the user logged in
+        //if yes then make the album grid VC the rootVC
+        //if no then make the Login VC the rootVC
+        if let _ = AccessToken.current{
+            let mainScreen = storyBoard.instantiateViewController(withIdentifier: "albumGridNavigationController")
+            self.window?.rootViewController = mainScreen
+
+        }else{
+            let loginScreen = storyBoard.instantiateViewController(withIdentifier: "loginViewController")
+            self.window?.rootViewController = loginScreen
+        }
         return true
     }
     
