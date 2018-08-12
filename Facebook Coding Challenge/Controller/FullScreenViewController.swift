@@ -47,7 +47,8 @@ class FullScreenViewController: UIViewController {
                 let pictureUrl = pictureHD.value(forKey: "source") as! String
                 
                 let url = URL(string: pictureUrl)
-                fullScreenImage.af_setImage(withURL: url!)
+                let placeholderImage = UIImage(named: "placeholder")
+                fullScreenImage.af_setImage(withURL: url!, placeholderImage: placeholderImage)
             }
         }
     }

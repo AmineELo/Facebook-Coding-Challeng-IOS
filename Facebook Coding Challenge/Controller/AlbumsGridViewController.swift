@@ -139,7 +139,8 @@ extension AlbumsGridViewController: UICollectionViewDelegate, UICollectionViewDa
         //Image downloading
         if let coverImage = cell.viewWithTag(20) as? UIImageView{
             let url = URL(string: albums[indexPath.row].albumCoverUrl)
-            coverImage.af_setImage(withURL: url!)
+            let placeholderImage = UIImage(named: "placeholder")
+            coverImage.af_setImage(withURL: url!, placeholderImage: placeholderImage)
         }
 
         return cell

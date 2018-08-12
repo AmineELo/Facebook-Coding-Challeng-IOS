@@ -95,7 +95,8 @@ extension PictureViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         if let picture = cell.viewWithTag(10) as? UIImageView{
             let url = URL(string: pictures[indexPath.row].pictureUrl)
-            picture.af_setImage(withURL: url!)
+            let placeholderImage = UIImage(named: "placeholder")
+            picture.af_setImage(withURL: url!, placeholderImage: placeholderImage)
         }
         return cell
     }
