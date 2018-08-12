@@ -16,6 +16,7 @@
 		2E9AD10E211FAA960038EB1E /* AlbumsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */; };
 		2EF70873212037E5008434A8 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF70872212037E5008434A8 /* PictureViewController.swift */; };
 		2EF7087521203E3A008434A8 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7087421203E3A008434A8 /* Picture.swift */; };
+		2EF7087721204409008434A8 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7087621204409008434A8 /* FullScreenViewController.swift */; };
 		348042157ECC93BFB79E7614 /* Pods_Facebook_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67950CBDFF653B3651227C8 /* Pods_Facebook_Coding_Challenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsGridViewController.swift; sourceTree = "<group>"; };
 		2EF70872212037E5008434A8 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		2EF7087421203E3A008434A8 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		2EF7087621204409008434A8 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		3B11CE582AF9E67DE8F4167B /* Pods-Facebook Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Coding Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Coding Challenge/Pods-Facebook Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		60AB6A3EF1BFFD254E1B1F23 /* Pods-Facebook Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook Coding Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Facebook Coding Challenge/Pods-Facebook Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		A67950CBDFF653B3651227C8 /* Pods_Facebook_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				2E4117522114CB3B00D5C0A9 /* LoginViewController.swift */,
 				2E9AD10D211FAA960038EB1E /* AlbumsGridViewController.swift */,
 				2EF70872212037E5008434A8 /* PictureViewController.swift */,
+				2EF7087621204409008434A8 /* FullScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				2E4117512114CB3B00D5C0A9 /* AppDelegate.swift in Sources */,
 				2E9AD10E211FAA960038EB1E /* AlbumsGridViewController.swift in Sources */,
 				2E66DB85212024BC006889E5 /* Album.swift in Sources */,
+				2EF7087721204409008434A8 /* FullScreenViewController.swift in Sources */,
 				2EF70873212037E5008434A8 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
