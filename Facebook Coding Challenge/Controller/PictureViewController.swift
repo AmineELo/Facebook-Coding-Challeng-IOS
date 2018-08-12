@@ -38,7 +38,7 @@ class PictureViewController: UIViewController {
     
     func getPictures(){
         let connection = GraphRequestConnection()
-        connection.add(GraphRequest(graphPath: "/" + albumId + "/photos?fields=picture")) { httpResponse, result in
+        connection.add(GraphRequest(graphPath: "/" + albumId + "/photos?fields=picture,images")) { httpResponse, result in
             switch result {
             case .success(let response):
                 self.extractPictures(response: response)
@@ -66,11 +66,13 @@ class PictureViewController: UIViewController {
         let valueDict : NSDictionary = array[index] as! NSDictionary
         
         let id = valueDict.object(forKey: "id") as! String
-        let pictureUrl = valueDict.object(forKey: "picture") as! String
+        
+        let images = valueDict.value(forKey: "images") as! NSArray
+        let imageUrl = (images[0] as! NSDictionary).value(forKey: "source") as! String
         // append data to the dataset
         let picture = Picture()
         picture.pictureId = id
-        picture.pictureUrl = pictureUrl
+        picture.pictureUrl = imageUrl
         
         pictures.append(picture)
     }
