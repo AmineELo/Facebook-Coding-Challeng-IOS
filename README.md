@@ -20,7 +20,7 @@ These are technologies & 3rd-partie libraries used in this app
 1. Clone the repository.
 ```git clone https://github.com/AmineELo/Facebook-Coding-Challeng-IOS.git```
 
-2. open the project with android studio
+2. open the project file ```Facebook Coding Challenge.xcworkspace``` with Xcode
 
 3. You can either ask me to add you as a Tester of the app by sending me your Bundle ID or you can follow the "Step 1 and Step 3" mentionned in this link [steps](https://developers.facebook.com/docs/ios/getting-started)
 
