@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Facebook_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Facebook_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="284" y="134"/>
         </scene>
         <!--Albums Grid-->
         <scene sceneID="FEy-he-49d">
@@ -49,7 +49,11 @@
                         <viewLayoutGuide key="safeArea" id="jp7-vp-tyj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Albums Grid" id="nyG-0e-tUn">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="mGW-fo-XgL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="mGW-fo-XgL">
+                            <connections>
+                                <action selector="logoutPressed:" destination="8t0-lf-6Si" id="i3J-Vn-ee2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4C-Kg-lNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
