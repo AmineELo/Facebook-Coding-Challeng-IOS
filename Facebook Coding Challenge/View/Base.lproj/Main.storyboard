@@ -149,7 +149,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="263" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dG1-tT-DhL">
+                                                <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dG1-tT-DhL">
                                                     <rect key="frame" x="0.0" y="0.0" width="263" height="205"/>
                                                 </imageView>
                                             </subviews>

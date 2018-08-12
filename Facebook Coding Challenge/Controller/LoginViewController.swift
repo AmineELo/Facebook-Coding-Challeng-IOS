@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     //SFAuthenticationViewController.
     //This forces me to add a delay before I can continue working with the view stack.
     func showAlbumGridVC(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.performSegue(withIdentifier: "goToAlbumGrid", sender: self)
         })
     }
