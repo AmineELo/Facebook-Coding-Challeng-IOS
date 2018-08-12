@@ -109,6 +109,15 @@ class AlbumsGridViewController: UIViewController {
         
         albums.append(album)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToPictureGrid" {
+            if let destinationVC = segue.destination as? PictureViewController,
+                let index = sender as? IndexPath{
+                destinationVC.albumId = albums[index.row].albumId
+            }
+        }
+    }
 }
 
 extension AlbumsGridViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -129,5 +138,9 @@ extension AlbumsGridViewController: UICollectionViewDelegate, UICollectionViewDa
         }
 
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToPictureGrid", sender: indexPath)
     }
 }

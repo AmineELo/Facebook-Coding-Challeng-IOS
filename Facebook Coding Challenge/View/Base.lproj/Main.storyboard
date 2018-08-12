@@ -107,22 +107,24 @@
                     </navigationItem>
                     <connections>
                         <outlet property="albumCollectionView" destination="64l-8R-aFL" id="rQu-bs-tKu"/>
+                        <segue destination="YwY-2e-pMC" kind="show" identifier="goToPictureGrid" id="13H-Ui-7aT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4C-Kg-lNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2133.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Pictures Grid-->
         <scene sceneID="nFf-IW-lso">
             <objects>
-                <viewController id="YwY-2e-pMC" sceneMemberID="viewController">
+                <viewController id="YwY-2e-pMC" customClass="PictureViewController" customModule="Facebook_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OgD-2l-i2F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FiP-wB-enm"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Pictures Grid" id="bXH-KE-gKl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OaM-nk-Er7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
